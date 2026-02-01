@@ -1,14 +1,15 @@
+# ✅ CORRECT IMPORTS:
 import asyncio
 import logging
 from datetime import datetime
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ChatMemberStatus
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     Application, CommandHandler, MessageHandler, 
     CallbackQueryHandler, ContextTypes, filters
 )
-from telegram.constants import ParseMode, ChatAction
+from telegram.constants import ParseMode, ChatAction, ChatMemberStatus
 from telegram.error import BadRequest, Forbidden
-
+# ... rest of your code ...
 import config
 from database import db
 from utils import (
